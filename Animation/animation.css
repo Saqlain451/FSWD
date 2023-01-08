@@ -69,7 +69,7 @@ div {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
   background-color: transparent;
-  box-shadow:  0rem 1rem 2rem rgba(0,0,0.5);
+  /* box-shadow:  0rem 1rem 2rem rgba(0,0,0.5); */
 }
 .loader::after,
 .loader::before {
@@ -116,4 +116,22 @@ div {
 .center{
     background-color: transparent;
     margin: auto;
+}
+
+
+@media (220px<=width<500px){
+    body{
+        background-color: white;
+    }
+    .loader::before{
+        border-color: black black transparent transparent;
+    }
+    .anim{
+        width: 15rem;
+        height: 1rem;
+    }
+    .anim::before{
+        width: 15rem;
+        height: 1rem;
+    }
 }
